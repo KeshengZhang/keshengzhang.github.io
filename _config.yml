@@ -1,93 +1,93 @@
-# theme: jekyll-theme-cayman
+theme: jekyll-theme-cayman
 
-# Site Settings
-title: "Your Name | Academic Blog"  # 网站标题
-description: "Welcome to my academic blog! Here, I share my research, projects, and thoughts on [Your Field]."  # 网站描述
-url: "https://keshengzhang.github.io"  # 你的 GitHub Pages URL
-baseurl: ""  # 如果你的网站不在根目录，可以设置子路径
+# # Site Settings
+# title: "Your Name | Academic Blog"  # 网站标题
+# description: "Welcome to my academic blog! Here, I share my research, projects, and thoughts on [Your Field]."  # 网站描述
+# url: "https://keshengzhang.github.io"  # 你的 GitHub Pages URL
+# baseurl: ""  # 如果你的网站不在根目录，可以设置子路径
 
-# Author Settings
-author:
-  name: "Your Name"  # 你的名字
-  email: "your.email@example.com"  # 你的邮箱
-  twitter: "YourTwitterHandle"  # 你的 Twitter 账号
-  github: "YourGitHubUsername"  # 你的 GitHub 用户名
-  linkedin: "YourLinkedInProfile"  # 你的 LinkedIn 链接
-  google_scholar: "YourGoogleScholarID"  # 你的 Google Scholar ID
-  orcid: "YourORCID"  # 你的 ORCID ID
+# # Author Settings
+# author:
+#   name: "Your Name"  # 你的名字
+#   email: "your.email@example.com"  # 你的邮箱
+#   twitter: "YourTwitterHandle"  # 你的 Twitter 账号
+#   github: "YourGitHubUsername"  # 你的 GitHub 用户名
+#   linkedin: "YourLinkedInProfile"  # 你的 LinkedIn 链接
+#   google_scholar: "YourGoogleScholarID"  # 你的 Google Scholar ID
+#   orcid: "YourORCID"  # 你的 ORCID ID
 
-# Theme Settings
-theme: minimal-mistakes-jekyll  # 使用的 Jekyll 主题
-remote_theme: mmistakes/minimal-mistakes  # 如果使用远程主题，可以指定
+# # Theme Settings
+# theme: minimal-mistakes-jekyll  # 使用的 Jekyll 主题
+# remote_theme: mmistakes/minimal-mistakes  # 如果使用远程主题，可以指定
 
-# Navigation Links
-navigation:
-  - text: "README"
-    url: /
-  - text: "About"
-    url: /about/
-  - text: "Research"
-    url: /research/
-  - text: "Publications"
-    url: /publications/
-  - text: "Blog"
-    url: /blog/
-  - text: "Contact"
-    url: /contact/
+# # Navigation Links
+# navigation:
+#   - text: "README"
+#     url: /
+#   - text: "About"
+#     url: /about/
+#   - text: "Research"
+#     url: /research/
+#   - text: "Publications"
+#     url: /publications/
+#   - text: "Blog"
+#     url: /blog/
+#   - text: "Contact"
+#     url: /contact/
 
-# Defaults
-defaults:
-  - scope:
-      path: ""  # 适用于所有文件
-    values:
-      layout: "single"  # 默认布局
-      author: "Your Name"  # 默认作者
+# # Defaults
+# defaults:
+#   - scope:
+#       path: ""  # 适用于所有文件
+#     values:
+#       layout: "single"  # 默认布局
+#       author: "Your Name"  # 默认作者
 
-# Plugins
-plugins:
-  - jekyll-feed  # 支持 RSS 订阅
-  - jekyll-seo-tag  # SEO 优化
-  - jekyll-sitemap  # 生成站点地图
+# # Plugins
+# plugins:
+#   - jekyll-feed  # 支持 RSS 订阅
+#   - jekyll-seo-tag  # SEO 优化
+#   - jekyll-sitemap  # 生成站点地图
 
-# SEO Settings
-seo:
-  title: "Your Name | Academic Blog"  # SEO 标题
-  description: "Welcome to my academic blog! Here, I share my research, projects, and thoughts on [Your Field]."  # SEO 描述
-  image: "/assets/images/your-logo.png"  # 网站 Logo 或头像
+# # SEO Settings
+# seo:
+#   title: "Your Name | Academic Blog"  # SEO 标题
+#   description: "Welcome to my academic blog! Here, I share my research, projects, and thoughts on [Your Field]."  # SEO 描述
+#   image: "/assets/images/your-logo.png"  # 网站 Logo 或头像
 
-# Social Sharing
-share:
-  twitter: true  # 启用 Twitter 分享
-  facebook: true  # 启用 Facebook 分享
-  linkedin: true  # 启用 LinkedIn 分享
+# # Social Sharing
+# share:
+#   twitter: true  # 启用 Twitter 分享
+#   facebook: true  # 启用 Facebook 分享
+#   linkedin: true  # 启用 LinkedIn 分享
 
-# Analytics
-google_analytics: "UA-XXXXXXXXX-X"  # 你的 Google Analytics 跟踪 ID
+# # Analytics
+# google_analytics: "UA-XXXXXXXXX-X"  # 你的 Google Analytics 跟踪 ID
 
-# Comments
-comments:
-  provider: "disqus"  # 评论系统（如 Disqus）
-  disqus:
-    shortname: "your-disqus-shortname"  # 你的 Disqus 短名称
+# # Comments
+# comments:
+#   provider: "disqus"  # 评论系统（如 Disqus）
+#   disqus:
+#     shortname: "your-disqus-shortname"  # 你的 Disqus 短名称
 
-# Pagination
-paginate: 5  # 每页显示的博客文章数量
-paginate_path: "/blog/page:num"  # 分页路径
+# # Pagination
+# paginate: 5  # 每页显示的博客文章数量
+# paginate_path: "/blog/page:num"  # 分页路径
 
-# Customization
-custom:
-  accent_color: "#4CAF50"  # 主题强调色（绿色）
-  font:
-    text: "Roboto"  # 正文字体
-    heading: "Lato"  # 标题字体
-  avatar: "/assets/images/your-avatar.jpg"  # 你的头像
-  favicon: "/assets/images/favicon.ico"  # 网站图标
+# # Customization
+# custom:
+#   accent_color: "#4CAF50"  # 主题强调色（绿色）
+#   font:
+#     text: "Roboto"  # 正文字体
+#     heading: "Lato"  # 标题字体
+#   avatar: "/assets/images/your-avatar.jpg"  # 你的头像
+#   favicon: "/assets/images/favicon.ico"  # 网站图标
 
-# Exclude Files
-exclude:
-  - "Gemfile"
-  - "Gemfile.lock"
-  - "README.md"
-  - "LICENSE"
-  - "node_modules"
-  - "vendor"
+# # Exclude Files
+# exclude:
+#   - "Gemfile"
+#   - "Gemfile.lock"
+#   - "README.md"
+#   - "LICENSE"
+#   - "node_modules"
+#   - "vendor"
