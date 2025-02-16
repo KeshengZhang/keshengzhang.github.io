@@ -3,7 +3,7 @@
 # Site Settings
 title: "Your Name | Academic Blog"  # 网站标题
 description: "Welcome to my academic blog! Here, I share my research, projects, and thoughts on [Your Field]."  # 网站描述
-url: "https://yourusername.github.io"  # 你的 GitHub Pages URL
+url: "https://keshengzhang.github.io"  # 你的 GitHub Pages URL
 baseurl: ""  # 如果你的网站不在根目录，可以设置子路径
 
 # Author Settings
