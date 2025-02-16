@@ -22,7 +22,7 @@ remote_theme: mmistakes/minimal-mistakes  # 如果使用远程主题，可以指
 
 # Navigation Links
 navigation:
-  - text: "Home"
+  - text: "README"
     url: /
   - text: "About"
     url: /about/
