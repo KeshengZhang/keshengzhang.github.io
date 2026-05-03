@@ -8,65 +8,51 @@
 <link rel="stylesheet" href="bibtex.css" type="text/css" />
 <link rel="stylesheet" href="index2.css" type="text/css" />
 <title></title>
-<script type="text/javascript"> 
-function toggleBibtex(articleid) {
-  var bib = document.getElementById('bib_'+articleid);
-  if (bib) {
-    if(bib.className.indexOf('bibtex') != -1) {
-    bib.className.indexOf('noshow') == -1?bib.className = 'bibtex noshow':bib.className = 'bibtex';
-    }
-  } else {
-    return;
-  }
-}
-</script>
+<script src="script.js" type="text/javascript"></script>
 </head>
 <body>
 <table summary="Table for page layout." id="tlayout">
 <tr valign="top">
 <td id="layout-menu">
 
-<!-- <div align="center"><b><font color="#333399" size="5">Welcome to </font></b></div>
-<div align="center"><b><font color="#333399" size="5">Kesheng Zhang's Homepage!</font></b></div>
-<div align="center"><b><font color="#333399" size="5">欢迎来到张克胜的主页!</font></b></div> -->
 <div>&nbsp;</div> 
 
 <div align="center">
 <div width="160" align="middle", style="border-radius:0%; overflow:hidden;">
 <img src="image/zks.png" alt="KeshengZhang, 张克胜" width="240" align="middle">
 </div></div>
-<br/>
+<!-- <br/> -->
 <div align="center"><b><font color="#333399" size="5">Kesheng Zhang | 张克胜</font></b></div>
-<div align="center"><img src="icon/icon-id card.png" width="15px" /> Lecturer in University of</div>
+<div align="center"><img src="icon/icon-id card.png" width="18px" /> Lecturer in University of</div>
 <div align="center">Electronic Science and Technology of China</div>
-<div align="center"><img src="icon/icon-id card.png" width="15px" /> 电子科技大学讲师</div>
-<!--<div align="center"><img src="icon/icon-tel.png" width="15px" />&nbsp;+86-18608651884</div>-->
-<div align="center"><img src="icon/icon-mail.png" width="15px" />&nbsp;<a href="keshengzhang[at]uestc[dot]edu[dot]cn">kszhang@uestc.edu.cn</a></div>
+<div align="center"><img src="icon/icon-id card.png" width="18px" /> 电子科技大学讲师</div>
+<div align="center"><a href="javascript:void(0)" id="email-copy-link" data-copy="kszhang@uestc.edu.cn"><img src="icon/icon-mail.png" width="18px" style="margin-right: 8px;" /> kszhang@uestc.edu.cn</a></div>
 
-<div class="menu-category"><img src="icon/Menu.png" width="15px" /> Menu | 目录</div>
-<div class="menu-item"><a href="index.html" class="current"><img src="icon/home.png" width="15px" /> Home | 首页</a></div>
-<div class="menu-item"><a href="publications.html"><img src="icon/Publications.png" width="15px" /> Publications | 发表论文</a></div>
-<div class="menu-item"><a href="projects.html"><img src="icon/Projects.png" width="15px" /> Projects | 项目</a></div>  
-<div class="menu-item"><a href="honorandawards.html"><img src="icon/Honors.png" width="15px" /> Honors & Awards | 荣誉与获奖</a></div>  
-<div class="menu-item"><a href="services.html"><img src="icon/Services.png" width="15px" /> Services | 学术服务</a></div>
-<div class="menu-item"><a href="course.html"><img src="icon/Course.png" width="15px" /> Course | 课程</a></div>
-<div class="menu-item"><a href="group.html"><img src="icon/Students.png" width="15px" /> Group | 团队</a></div>
+<!-- <div class="menu-category"><img src="icon/Menu.png" width="18px" /> Menu | 目录</div> -->
+<div class="menu-category"><img src="icon/Menu.png" width="20px" style="margin-right: 10px;" /> Navigation | 导航</div>
+<div class="menu-item"><a href="index.html" class="current"><img src="icon/home.png" width="18px" /> Home | 首页</a></div>
+<div class="menu-item"><a href="publications.html"><img src="icon/Publications.png" width="18px" /> Publications | 发表论文</a></div>
+<div class="menu-item"><a href="projects.html"><img src="icon/Projects.png" width="18px" /> Projects | 项目</a></div>  
+<div class="menu-item"><a href="honorandawards.html"><img src="icon/Honors.png" width="18px" /> Honors & Awards | 荣誉与获奖</a></div>  
+<div class="menu-item"><a href="services.html"><img src="icon/Services.png" width="18px" /> Services | 学术服务</a></div>
+<div class="menu-item"><a href="course.html"><img src="icon/Course.png" width="18px" /> Course | 课程</a></div>
+<div class="menu-item"><a href="group.html"><img src="icon/Students.png" width="18px" /> Group | 团队</a></div>
 
-<div class="menu-category"><img src="icon/link.png" width="15px" /> Links | 链接</div>
+<div class="menu-category"><img src="icon/link.png" width="20px" style="margin-right: 10px;" /> External Links | 外部链接</div>
 <div class="menu-item"><a href="https://scholar.google.com/citations?hl=en&user=mpdqz-sAAAAJ">
-<img src="icon/googlescholar.ico" width="15px" />&nbsp;Google&nbsp;Scholar</a></div>
+<img src="icon/googlescholar.ico" width="18px" />&nbsp;Google&nbsp;Scholar</a></div>
 <!-- <div class="menu-item"><a href="https://www.researchgate.net/profile/Yi_Jiang78">
-<img src="icon/researchgate.ico" width="15px" />&nbsp;ResearchGate</a></div> -->
+<img src="icon/researchgate.ico" width="18px" />&nbsp;ResearchGate</a></div> -->
 <!-- <div class="menu-item"><a href="https://www.webofscience.com/wos/author/record/N-9156-2015">
-<img src="icon/wos.ico" width="15px" />&nbsp;Clarivate&nbsp;WOS</a></div> -->
+<img src="icon/wos.ico" width="18px" />&nbsp;Clarivate&nbsp;WOS</a></div> -->
 <div class="menu-item"><a href="https://ieeexplore.ieee.org/author/37089169708">
-<img src="icon/ieee.ico" width="15px" />&nbsp;IEEE</a></div>
+<img src="icon/ieee.ico" width="18px" />&nbsp;IEEE</a></div>
 <!-- <div class="menu-item"><a href="https://www.scopus.com/authid/detail.uri?authorId=56693226100#top">
-<img src="icon/scopus.ico" width="15px" />&nbsp;Scopus</a></div> -->
+<img src="icon/scopus.ico" width="18px" />&nbsp;Scopus</a></div> -->
 <div class="menu-item"><a href="https://orcid.org/0000-0003-3910-1581">
-<img src="icon/orcid.ico" width="15px" />&nbsp;ORCID</a></div>
+<img src="icon/orcid.ico" width="18px" />&nbsp;ORCID</a></div>
 <div class="menu-item"><a href="https://github.com/KeshengZhang">
-<img src="icon/github.ico" width="15px" />&nbsp;Github</a></div>
+<img src="icon/github.ico" width="18px" />&nbsp;Github</a></div>
 
 </td>
 
@@ -80,7 +66,7 @@ function toggleBibtex(articleid) {
 
 </ul>-->
 
-<h2><img src="icon/News.png" width="18px" /> Papers in Press | 最新录用</h2>
+<h2 class="section-title"><img src="icon/News.png" width="18px" /> Papers in Press | 最新录用</h2>
 <ul> 
 
 
@@ -103,7 +89,7 @@ function toggleBibtex(articleid) {
 
 </ul>  
 
-<h2><img src="icon/Publications.png" width="18px" /> Journal Papers | 期刊论文</h2>
+<h2 class="section-title"><img src="icon/Publications.png" width="18px" /> Journal Papers | 期刊论文</h2>
 <ol>
 
 
@@ -305,14 +291,14 @@ month={August}
 
 </ol>  
 
-<h2><img src="icon/Publications.png" width="18px" /> Conference Papers | 会议论文</h2>
+<h2 class="section-title"><img src="icon/Publications.png" width="18px" /> Conference Papers | 会议论文</h2>
 <ol>
 
 	
 <!-- <li><p style="text-align:justify; text-justify:inter-ideograph;"> <b>Yi Jiang<sup>#</sup></b>, Weinan Gao*. 
 	Value Iteration and Data-Driven Adaptive Optimal Output Regulation of Linear Continuous-Time Systems. 
 	<b>Control and Decision Conference (CCDC), 2022 34th Chinese. IEEE</b>, Hefei, Anhui, China, 2022: 1509-1514, doi: 10.1109/CCDC55256.2022.10033453.
-	<b>(<img src="icon/esi.png" width="15px" />Finalist for Zhang Si-Ying Outstanding Youth Paper Award | <img src="icon/esi.png" width="15px" />张嗣瀛优秀青年论文奖提名奖)</b>
+	<b>(<img src="icon/esi.png" width="18px" />Finalist for Zhang Si-Ying Outstanding Youth Paper Award | <img src="icon/esi.png" width="18px" />张嗣瀛优秀青年论文奖提名奖)</b>
 	<a href="javascript:toggleBibtex(&#39;yi2022ccdc&#39;)"><b>[BibTex]</b></a>
 	<a href="https://ieeexplore.ieee.org/document/10033453/"><b>[Link]</b></a>
 	<a href="doc/2022CCDC张嗣瀛优秀青年论文奖提名奖.pdf"><b>[Cert]</b></a>
@@ -408,7 +394,7 @@ doi={10.1109/CCDC52312.2021.9601660}
 
 </ol> 
 
-<h2><img src="icon/Patents.png" width="18px" /> Patents | 专利</h2>
+<h2 class="section-title"><img src="icon/Patents.png" width="18px" /> Patents | 专利</h2>
 <ol> 
 
 <li><p style="text-align:justify; text-justify:inter-ideograph;">  
@@ -433,7 +419,7 @@ Patent Application No. 202310009904X, Authorized Announcement No. CN116244625B, 
 
 </ol>
 	 
-<h2><img src="icon/Talk.png" width="18px" /> Software Copyrights | 软件著作权</h2>
+<h2 class="section-title"><img src="icon/Talk.png" width="18px" /> Software Copyrights | 软件著作权</h2>
 <ol>
 
 <!-- <li><p style="text-align:justify; text-justify:inter-ideograph;">  
@@ -557,13 +543,13 @@ Patent Application No. 202310009904X, Authorized Announcement No. CN116244625B, 
 	 
 </ol>
 
-<h2><img src="icon/Education.png" width="18px" /> Thesis | 学位论文</h2>
+<h2 class="section-title"><img src="icon/Education.png" width="18px" /> Thesis | 学位论文</h2>
 <ol>
  
-<!-- <li><p><b>姜艺</b>. 数据驱动的复杂工业过程运行优化控制方法研究. 博士学位论文, 东北大学, 沈阳, 中国, 2020. <b>(<img src="icon/esi.png" width="15px" />中国自动化学会, 辽宁省与东北大学优秀博士学位论文奖)</b>
+<!-- <li><p><b>姜艺</b>. 数据驱动的复杂工业过程运行优化控制方法研究. 博士学位论文, 东北大学, 沈阳, 中国, 2020. <b>(<img src="icon/esi.png" width="18px" />中国自动化学会, 辽宁省与东北大学优秀博士学位论文奖)</b>
 	<br/> <b>Yi Jiang</b>. Research on Data-Driven Operational Optimization Control Approach for Complex Industrial Processes. 
 	Ph.D. Thesis, Northeastern University, Shenyang, China, 2020. 
-	<b>(<img src="icon/esi.png" width="15px" />Excellent Doctoral Dissertation Award of Chinese Association of Automation, Liaoning Province and Northeastern University)</b>
+	<b>(<img src="icon/esi.png" width="18px" />Excellent Doctoral Dissertation Award of Chinese Association of Automation, Liaoning Province and Northeastern University)</b>
 	<a href="javascript:toggleBibtex(&#39;jiang2020phdthesis&#39;)"><b>[BibTex]</b></a>
 	<a href="https://www.researchgate.net/publication/343670079_Research_on_date-driven_operational_optimization_control_approach_for_complex_industrial_processes?_sg%5B0%5D=sBnpWM4FxaiHcP6xI8wE6VAEmlRQtWlwM2_h_RZNZqVFaLBNrQpv0_q85z6HUNhsctHWfyl3_f_00Pf3u2nP2egz0bJcFP8gIW68DdN8.KjquEIYMLe39TUPqKeoEZd8XjALb7RfSvv5_6z1piaXr5904889Z0QC7QMufmr6-kcVOyabALOeMn4FwnWl68A"><b>[Link-RG]</b></a>  
 	<a href="https://kns.cnki.net/kcms2/article/abstract?v=_W1AupcyYgb-jSrmypNlVz0Ta99VoqoNReZbbFeEtg6ZTaWN6yoTbcZJk9isPNDvVMTK_y4CdcU9m0C9qMCRQNugmN8BwJe0JuuOJCVUh2iN84b7bY4CQ-o7vpD78hppSFoteQzW6fF2xNxNT14l-uAhI5AbUhWZQSSHWmdhHwFRJ3huXjzZa6qWLFV9Lg94&uniplatform=NZKPT&language=CHS"><b>[Link-CNKI]</b></a>  

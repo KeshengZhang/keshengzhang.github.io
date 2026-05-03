@@ -8,83 +8,7 @@
 <link rel="stylesheet" href="bibtex.css" type="text/css" />
 <link rel="stylesheet" href="index2.css" type="text/css" />
 <title>K. Zhang's Homepage</title>
-<script type="text/javascript"> 
-function toggleBibtex(articleid) {
-  var bib = document.getElementById('bib_'+articleid);
-  if (bib) {
-    if(bib.className.indexOf('bibtex') != -1) {
-      bib.className.indexOf('noshow') == -1 ? bib.className = 'bibtex noshow' : bib.className = 'bibtex';
-    }
-  } else {
-    return;
-  }
-}
-
-function showCopyTooltip(message, anchor) {
-  var tooltip = document.getElementById('copy-tooltip');
-  if (!tooltip) {
-    tooltip = document.createElement('div');
-    tooltip.id = 'copy-tooltip';
-    tooltip.className = 'copy-tooltip';
-    document.body.appendChild(tooltip);
-  }
-  tooltip.textContent = message;
-  var rect = anchor.getBoundingClientRect();
-  tooltip.style.left = Math.min(window.innerWidth - 220, rect.left + window.pageXOffset + 10) + 'px';
-  tooltip.style.top = Math.max(10, rect.top + window.pageYOffset - 40) + 'px';
-  tooltip.classList.add('visible');
-  clearTimeout(window._copyTooltipTimer);
-  window._copyTooltipTimer = setTimeout(function() {
-    tooltip.classList.remove('visible');
-  }, 1200);
-}
-
-function handleEmailCopy(event) {
-  event.preventDefault();
-  var link = event.currentTarget;
-  var value = link.getAttribute('data-copy') || link.textContent.trim();
-  if (!value) return;
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(value).then(function() {
-      showCopyTooltip('已复制：' + value, link);
-    }, function() {
-      fallbackCopyText(value, link);
-    });
-  } else {
-    fallbackCopyText(value, link);
-  }
-}
-
-function fallbackCopyText(text, anchor) {
-  var textarea = document.createElement('textarea');
-  textarea.value = text;
-  textarea.style.position = 'fixed';
-  textarea.style.left = '-9999px';
-  document.body.appendChild(textarea);
-  textarea.focus();
-  textarea.select();
-  try {
-    document.execCommand('copy');
-    showCopyTooltip('已复制：' + text, anchor);
-  } catch (err) {
-    showCopyTooltip('复制失败，请手动复制', anchor);
-  }
-  document.body.removeChild(textarea);
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-  var emailLink = document.getElementById('email-copy-link');
-  if (emailLink) {
-    emailLink.addEventListener('click', handleEmailCopy);
-  }
-});
-document.addEventListener('DOMContentLoaded', function() {
-  var emailLink2 = document.getElementById('email-copy-link2');
-  if (emailLink2) {
-    emailLink2.addEventListener('click', handleEmailCopy);
-  }
-});
-</script>
+<script src="script.js" type="text/javascript"></script>
 </head>
 <body>
 
@@ -101,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- <img src="image/zks.jpg" width="160px" /> -->
 <img src="image/zks.png" alt="KeshengZhang, 张克胜" width="240" align="middle">
 </div></div>
-<br/>
+<!-- <br/> -->
 <div align="center"><b><font color="#333399" size="5">Kesheng Zhang | 张克胜</font></b></div>
 <div align="center"><img src="icon/icon-id card.png" width="18px" /> Lecturer in University of</div>
 <div align="center">Electronic Science and Technology of China</div>
