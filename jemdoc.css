@@ -14,7 +14,7 @@ body {
 	margin: 0;
 }
 
-#layout-menu {
+/* #layout-menu {
 	background: #9fc3e6;
 	border: 1px solid #dddddd;
 	padding-top: 0.5em;
@@ -30,7 +30,7 @@ body {
 #layout-menu td {
 	background: #f4f4f4;
     vertical-align: top;
-}
+} */
 
 #layout-content {
 	padding-top: 0.0em;
@@ -42,10 +42,10 @@ body {
     vertical-align: top;
 }
 
-#layout-menu a {
+/* #layout-menu a {
 	line-height: 1.5em;
 	margin-left: 0.5em;
-}
+} */
 
 tt {
     background: #ffffdd;
@@ -57,7 +57,7 @@ pre, tt {
 }
 
 a, a > tt {
-	color: #224b8d;
+	color: #3067c0;
 	text-decoration: none;
 }
 
@@ -65,7 +65,7 @@ a:hover {
 	border-bottom: 1px gray dotted;
 }
 
-#layout-menu a.current:link, #layout-menu a.current:visited {
+/* #layout-menu a.current:link, #layout-menu a.current:visited {
 	color: #5986CE;
 	border-bottom: 1px gray solid;
 }
@@ -75,20 +75,20 @@ a:hover {
 }
 #layout-menu a:hover {
 	text-decoration: none;
-}
+} */
 
-div.menu-category {
+/* div.menu-category {
 	border-bottom: 1px solid gray;
 	margin-top: 0.8em;
 	padding-top: 0.2em;
 	padding-bottom: 0.1em;
 	font-weight: bold;
-}
+} */
 
-div.menu-item {
+/* div.menu-item {
 	padding-left: 16px;
 	text-indent: -16px;
-}
+} */
 
 div#toptitle {
 	padding-bottom: 0.2em;
@@ -117,15 +117,15 @@ strong {
 }
 
 
-h1, h2, h3 {
-	color: #333399;
+/* h1, h2, h3 {
+	color: #316bdf;
 	margin-top: 0.7em;
 	margin-bottom: 0.3em;
 	padding-bottom: 0.2em;
 	line-height: 1.0;
 	padding-top: 0.5em;
 	border-bottom: 1px solid #aaaaaa;
-}
+} */
 
 
 h1 {

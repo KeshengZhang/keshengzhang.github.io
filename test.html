@@ -6,84 +6,170 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
 <link rel="stylesheet" href="bibtex.css" type="text/css" />
-<link rel="stylesheet" href="index2.css" type="text/css" />
 <title>K. Zhang's Homepage</title>
+<style>
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#tlayout {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+}
+#layout-menu {
+    width: 280px;
+    background: linear-gradient(180deg, #4fb3e4 0%, #667eea 100%);
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+#layout-menu::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px 0 0 15px;
+    z-index: -1;
+}
+#layout-menu div {
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+#layout-menu img {
+    vertical-align: middle;
+    transition: transform 0.3s;
+}
+#layout-menu img:hover {
+    transform: scale(1.1);
+}
+#layout-menu a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px 0;
+    background: rgba(255,255,255,0.1);
+}
+#layout-menu a:hover {
+    color: #ffd700;
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.menu-category {
+    font-weight: bold;
+    margin-top: 30px;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.menu-item {
+    margin-left: 0;
+}
+#layout-content {
+    padding: 30px;
+    background: white;
+}
+#toptitle h1 {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease-in;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+h2 {
+    background: linear-gradient(45deg, #333399, #667eea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 40px;
+    padding: 10px 0;
+    border-left: 5px solid #667eea;
+    padding-left: 15px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    animation: slideIn 0.8s ease-out;
+}
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+.animated-title {
+    animation: fadeIn 1s ease-in, pulse 2s infinite;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+.section-title {
+    position: relative;
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border-radius: 2px;
+}
+.imgtable {
+    margin: 10px 0;
+}
+.imgtable img {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+#footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+}
+</style>
 <script type="text/javascript"> 
 function toggleBibtex(articleid) {
   var bib = document.getElementById('bib_'+articleid);
   if (bib) {
     if(bib.className.indexOf('bibtex') != -1) {
-      bib.className.indexOf('noshow') == -1 ? bib.className = 'bibtex noshow' : bib.className = 'bibtex';
+    bib.className.indexOf('noshow') == -1?bib.className = 'bibtex noshow':bib.className = 'bibtex';
     }
   } else {
     return;
   }
 }
-
-function showCopyTooltip(message, anchor) {
-  var tooltip = document.getElementById('copy-tooltip');
-  if (!tooltip) {
-    tooltip = document.createElement('div');
-    tooltip.id = 'copy-tooltip';
-    tooltip.className = 'copy-tooltip';
-    document.body.appendChild(tooltip);
-  }
-  tooltip.textContent = message;
-  var rect = anchor.getBoundingClientRect();
-  tooltip.style.left = Math.min(window.innerWidth - 220, rect.left + window.pageXOffset + 10) + 'px';
-  tooltip.style.top = Math.max(10, rect.top + window.pageYOffset - 40) + 'px';
-  tooltip.classList.add('visible');
-  clearTimeout(window._copyTooltipTimer);
-  window._copyTooltipTimer = setTimeout(function() {
-    tooltip.classList.remove('visible');
-  }, 1200);
-}
-
-function handleEmailCopy(event) {
-  event.preventDefault();
-  var link = event.currentTarget;
-  var value = link.getAttribute('data-copy') || link.textContent.trim();
-  if (!value) return;
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(value).then(function() {
-      showCopyTooltip('已复制：' + value, link);
-    }, function() {
-      fallbackCopyText(value, link);
-    });
-  } else {
-    fallbackCopyText(value, link);
-  }
-}
-
-function fallbackCopyText(text, anchor) {
-  var textarea = document.createElement('textarea');
-  textarea.value = text;
-  textarea.style.position = 'fixed';
-  textarea.style.left = '-9999px';
-  document.body.appendChild(textarea);
-  textarea.focus();
-  textarea.select();
-  try {
-    document.execCommand('copy');
-    showCopyTooltip('已复制：' + text, anchor);
-  } catch (err) {
-    showCopyTooltip('复制失败，请手动复制', anchor);
-  }
-  document.body.removeChild(textarea);
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-  var emailLink = document.getElementById('email-copy-link');
-  if (emailLink) {
-    emailLink.addEventListener('click', handleEmailCopy);
-  }
-});
-document.addEventListener('DOMContentLoaded', function() {
-  var emailLink2 = document.getElementById('email-copy-link2');
-  if (emailLink2) {
-    emailLink2.addEventListener('click', handleEmailCopy);
-  }
-});
 </script>
 </head>
 <body>
@@ -94,6 +180,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <tr valign="top">
 <td id="layout-menu">
 
+<!-- <div align="center"><b><font color="#333399" size="5">Welcome to </font></b></div>
+<div align="center"><b><font color="#333399" size="5">Kesheng Zhang's Homepage!</font></b></div>
+<div align="center"><b><font color="#333399" size="5">欢迎来到张克胜的主页!</font></b></div> -->
 <div>&nbsp;</div> 
 
 <div align="center">
@@ -103,20 +192,16 @@ document.addEventListener('DOMContentLoaded', function() {
 </div></div>
 <br/>
 <div align="center"><b><font color="#333399" size="5">Kesheng Zhang | 张克胜</font></b></div>
-<div align="center"><img src="icon/icon-id card.png" width="18px" /> Lecturer in University of</div>
+<div align="center"><img src="icon/icon-id card.png" width="15px" /> Lecturer in University of</div>
 <div align="center">Electronic Science and Technology of China</div>
-<div align="center">
-    <img src="icon/icon-id card.png" width="18px" /> 电子科技大学讲师</div>
+<div align="center"><img src="icon/icon-id card.png" width="15px" /> 电子科技大学讲师</div>
 <!--<div align="center"><img src="icon/icon-tel.png" width="15px" />&nbsp;+86-18608651884</div>-->
-<div align="center"><a href="javascript:void(0)" id="email-copy-link" data-copy="kszhang@uestc.edu.cn"><img src="icon/icon-mail.png" width="18px" style="margin-right: 8px;" /> kszhang@uestc.edu.cn</a></div>
+<div align="center"><img src="icon/icon-mail.png" width="15px" />&nbsp;<a href="keshengzhang[at]uestc[dot]edu[dot]cn">kszhang@uestc.edu.cn</a></div>
 
 <div class="menu-category"><img src="icon/Menu.png" width="20px" style="margin-right: 10px;" /> Navigation | 导航</div>
 <div class="menu-item"><a href="index.html" class="current"><img src="icon/home.png" width="18px" style="margin-right: 8px;" /> Home | 首页</a></div>
-<div class="menu-item"><a href="publications.html">
-    <img src="icon/Publications.png" width="18px" style="margin-right: 8px;" /> 
-    Publications | 发表论文</a></div>
-<div class="menu-item"><a href="projects.html">
-    <img src="icon/Projects.png" width="18px" style="margin-right: 8px;" /> Projects | 项目</a></div>  
+<div class="menu-item"><a href="publications.html"><img src="icon/Publications.png" width="18px" style="margin-right: 8px;" /> Publications | 发表论文</a></div>
+<div class="menu-item"><a href="projects.html"><img src="icon/Projects.png" width="18px" style="margin-right: 8px;" /> Projects | 项目</a></div>  
 <div class="menu-item"><a href="honorandawards.html">
     <img src="icon/Honors.png" width="18px" style="margin-right: 8px;" /> Honors & Awards | 荣誉与获奖</a></div>  
 <div class="menu-item"><a href="services.html"><img src="icon/Services.png" width="18px" style="margin-right: 8px;" /> Services | 学术服务</a></div>
@@ -133,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <td id="layout-content">
 <div id="toptitle">
-<h1 class="animated-title"> <img src="icon/home.png" width="25px" style="vertical-align: middle; margin-right: 10px;" /> Welcome to Kesheng Zhang's Homepage</h1>
+<h1 class="animated-title"> <img src="icon/home.png" width="25px" style="vertical-align: middle; margin-right: 10px;" /> Welcome to Kesheng Zhang's Homepage | 欢迎来到张克胜的主页 [Draft Version] </h1>
 </div>
 
 <h2 class="section-title"><img src="icon/icon-id card.png" width="22px" style="vertical-align: middle; margin-right: 10px;" /> About Me | 个人基本信息</h2>
@@ -147,15 +232,13 @@ document.addEventListener('DOMContentLoaded', function() {
 <img src="icon/icon-earth.png" width="15px" />&nbsp;No.2006, Xiyuan Ave, West Hi-Tech Zone, Chengdu, Sichuan 611731, China | 成都市高新区（西区）西源大道2006号, 成都, 四川省 611731, 中国<br />
 <!--<img src="icon/icon-tel.png" width="15px" />&nbsp;Tel: +86-18608651884<br />-->
 <!--<img src="icon/icon-tel.png" width="15px" />&nbsp;Tel: +852-59807254<br />-->
-<img src="icon/icon-mail.png" width="15px" />&nbsp;Email: <a href="javascript:void(0)">kszhang@uestc.edu.cn</a>
-<a href="javascript:void(0)" id="email-copy-link2" data-copy="kszhang@uestc.edu.cn"> | 点击复制</a>
-<br />	
+<img src="icon/icon-mail.png" width="15px" />&nbsp;Email: <a href="kszhang[at]uestc[dot]edu[dot]cn">kszhang@uestc.edu.cn</a><br />	
 </td></tr></table>
 
 <h2 class="section-title"><img src="icon/News.png" width="22px" style="vertical-align: middle; margin-right: 10px;" /> Admission Information | 招生信息</h2>
 
-	暂时招收自动化、人工智能、电子信息和计算机及其他相关专业的本科生、硕士、博士研究生、博士后。同时也欢迎外校学生访问交流。如有兴趣请附材料发送邮件至kszhang@uestc.edu.cn，邮件内容请简要介绍个人基本情况、研究兴趣和计划访问交流的时间等信息。谢谢！<br />
-Currently, I am recruiting undergraduate, master, Ph.D. students and postdocs in automation, artificial intelligence, electronic information and computer science and other related majors. 
+	暂时招收不了自动化、人工智能、电子信息和计算机及其他相关专业的本科生、硕士、博士研究生、博士后。同时也欢迎外校学生访问交流。如有兴趣请附材料发送邮件至kszhang@uestc.edu.cn，邮件内容请简要介绍个人基本情况、研究兴趣和计划访问交流的时间等信息。谢谢！<br />
+Currently, I am not recruiting undergraduate, master, Ph.D. students and postdocs in automation, artificial intelligence, electronic information and computer science and other related majors. 
 Meanwhile, students from other universities are also welcome to visit and exchange. If you are interested, please send an email to kszhang@uestc.edu.cn！<br />
 
 <h2 class="section-title"><img src="icon/Experiences.png" width="22px" style="vertical-align: middle; margin-right: 10px;" /> Experiences | 经历</h2>

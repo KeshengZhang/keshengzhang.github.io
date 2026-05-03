@@ -1,0 +1,174 @@
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    /* font-family: 'Arial', sans-serif; */
+    font-family: Georgia, serif;  
+    margin: 0;
+    padding: 0;
+}
+#tlayout {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+}
+#layout-menu {
+    width: 300px;
+    background: linear-gradient(180deg, #4ea3ce 0%, #7488dd 100%);
+    /* background: linear-gradient(180deg, #cfe5ff 0%, #e6f3ff 100%); */
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+    border-radius: 15px 0 0 15px;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+#layout-menu::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px 0 0 15px;
+    z-index: -1;
+}
+#layout-menu div {
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+#layout-menu img {
+    vertical-align: middle;
+    transition: transform 0.3s;
+}
+#layout-menu img:hover {
+    transform: scale(1.1);
+}
+#layout-menu a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px 0;
+    background: rgba(255,255,255,0.1);
+}
+#layout-menu a:hover {
+    color: #ffd700;
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.menu-category {
+    font-weight: bold;
+    margin-top: 30px;
+    border-bottom: 2px solid #4b687a;
+    padding-bottom: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.menu-item {
+    /* margin-left: 0; */
+    /* padding-left: 16px;
+	text-indent: -16px; */
+}
+#layout-content {
+    padding: 30px;
+    background: white;
+}
+#toptitle h1 {
+    background: linear-gradient(45deg, #667eea, #316bdf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease-in;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+h2 {
+    background: linear-gradient(45deg, #316bdf, #667eea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 40px;
+    padding: 10px 0;
+    border-left: 5px solid #667eea;
+    padding-left: 15px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    animation: slideIn 0.8s ease-out;
+}
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+.animated-title {
+    animation: fadeIn 1s ease-in, pulse 2s infinite;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+.section-title {
+    position: relative;
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border-radius: 2px;
+}
+.imgtable {
+    margin: 10px 0;
+}
+.imgtable img {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+#footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+}
+.copy-tooltip {
+    position: absolute;
+    z-index: 9999;
+    padding: 10px 14px;
+    background: rgba(31, 58, 109, 0.92);
+    color: #fff;
+    border-radius: 8px;
+    font-size: 13px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.18);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.18s ease-in-out;
+    max-width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.copy-tooltip.visible {
+    opacity: 1;
+}
