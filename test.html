@@ -1,269 +1,385 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
 <head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<link rel="stylesheet" href="bibtex.css" type="text/css" />
-<title>K. Zhang's Homepage</title>
-<style>
-body {
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-#tlayout {
-    width: 100%;
-    max-width: 1200px;
-    margin: 20px auto;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    background: white;
-}
-#layout-menu {
-    width: 280px;
-    background: linear-gradient(180deg, #4fb3e4 0%, #667eea 100%);
-    color: white;
-    padding: 20px;
-    box-shadow: 2px 0 10px rgba(0,0,0,0.2);
-    border-radius: 15px 0 0 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
-#layout-menu::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255,255,255,0.1);
-    border-radius: 15px 0 0 15px;
-    z-index: -1;
-}
-#layout-menu div {
-    margin-bottom: 15px;
-    width: 100%;
-    text-align: center;
-}
-#layout-menu img {
-    vertical-align: middle;
-    transition: transform 0.3s;
-}
-#layout-menu img:hover {
-    transform: scale(1.1);
-}
-#layout-menu a {
-    color: white;
-    text-decoration: none;
-    transition: all 0.3s;
-    display: block;
-    padding: 10px;
-    border-radius: 8px;
-    margin: 5px 0;
-    background: rgba(255,255,255,0.1);
-}
-#layout-menu a:hover {
-    color: #ffd700;
-    background: rgba(255,255,255,0.2);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-.menu-category {
-    font-weight: bold;
-    margin-top: 30px;
-    border-bottom: 2px solid #ffd700;
-    padding-bottom: 5px;
-    font-size: 18px;
-    text-transform: uppercase;
-}
-.menu-item {
-    margin-left: 0;
-}
-#layout-content {
-    padding: 30px;
-    background: white;
-}
-#toptitle h1 {
-    background: linear-gradient(45deg, #667eea, #764ba2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-size: 32px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-    animation: fadeIn 1s ease-in;
-}
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-h2 {
-    background: linear-gradient(45deg, #333399, #667eea);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 40px;
-    padding: 10px 0;
-    border-left: 5px solid #667eea;
-    padding-left: 15px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-    animation: slideIn 0.8s ease-out;
-}
-@keyframes slideIn {
-    from { opacity: 0; transform: translateX(-30px); }
-    to { opacity: 1; transform: translateX(0); }
-}
-.animated-title {
-    animation: fadeIn 1s ease-in, pulse 2s infinite;
-}
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.02); }
-    100% { transform: scale(1); }
-}
-.section-title {
-    position: relative;
-}
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 15px;
-    width: 50px;
-    height: 3px;
-    background: linear-gradient(90deg, #667eea, #764ba2);
-    border-radius: 2px;
-}
-.imgtable {
-    margin: 10px 0;
-}
-.imgtable img {
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-#footer {
-    text-align: center;
-    margin-top: 40px;
-    padding: 20px;
-    background: #f8f9fa;
-    border-top: 1px solid #e9ecef;
-}
-</style>
-<script src="script.js" type="text/javascript"></script>
+    <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" href="jemdoc.css" type="text/css" />
+    <link rel="stylesheet" href="bibtex.css" type="text/css" />
+    <title>K. Zhang's Homepage</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #tlayout {
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            background: white;
+        }
+
+        #layout-menu {
+            width: 280px;
+            background: linear-gradient(180deg, #4fb3e4 0%, #667eea 100%);
+            color: white;
+            padding: 20px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 15px 0 0 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        #layout-menu::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px 0 0 15px;
+            z-index: -1;
+        }
+
+        #layout-menu div {
+            margin-bottom: 15px;
+            width: 100%;
+            text-align: center;
+        }
+
+        #layout-menu img {
+            vertical-align: middle;
+            transition: transform 0.3s;
+        }
+
+        #layout-menu img:hover {
+            transform: scale(1.1);
+        }
+
+        #layout-menu a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: block;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 5px 0;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        #layout-menu a:hover {
+            color: #ffd700;
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-category {
+            font-weight: bold;
+            margin-top: 30px;
+            border-bottom: 2px solid #ffd700;
+            padding-bottom: 5px;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        .menu-item {
+            margin-left: 0;
+        }
+
+        #layout-content {
+            padding: 30px;
+            background: white;
+        }
+
+        #toptitle h1 {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            background: linear-gradient(45deg, #333399, #667eea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 40px;
+            padding: 10px 0;
+            border-left: 5px solid #667eea;
+            padding-left: 15px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            animation: slideIn 0.8s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .animated-title {
+            animation: fadeIn 1s ease-in, pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.02);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .section-title {
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 15px;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .imgtable {
+            margin: 10px 0;
+        }
+
+        .imgtable img {
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-top: 1px solid #e9ecef;
+        }
+    </style>
+    <script src="script.js" type="text/javascript"></script>
 </head>
+
 <body>
 
 
 
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<td id="layout-menu">
+    <table summary="Table for page layout." id="tlayout">
+        <tr valign="top">
+            <td id="layout-menu">
 
-<!-- <div align="center"><b><font color="#333399" size="5">Welcome to </font></b></div>
+                <!-- <div align="center"><b><font color="#333399" size="5">Welcome to </font></b></div>
 <div align="center"><b><font color="#333399" size="5">Kesheng Zhang's Homepage!</font></b></div>
 <div align="center"><b><font color="#333399" size="5">欢迎来到张克胜的主页!</font></b></div> -->
-<div>&nbsp;</div> 
+                <div>&nbsp;</div>
 
-<div align="center">
-<div width="160" align="middle", style="border-radius:0%; overflow:hidden;">
-<!-- <img src="image/zks.jpg" width="160px" /> -->
-<img src="image/zks.png" alt="KeshengZhang, 张克胜" width="240" align="middle">
-</div></div>
-<br/>
-<div align="center"><b><font color="#333399" size="5">Kesheng Zhang | 张克胜</font></b></div>
-<div align="center"><img src="icon/icon-id card.png" width="15px" /> Lecturer in University of</div>
-<div align="center">Electronic Science and Technology of China</div>
-<div align="center"><img src="icon/icon-id card.png" width="15px" /> 电子科技大学讲师</div>
-<!--<div align="center"><img src="icon/icon-tel.png" width="15px" />&nbsp;+86-18608651884</div>-->
-<div align="center"><img src="icon/icon-mail.png" width="15px" />&nbsp;<a href="keshengzhang[at]uestc[dot]edu[dot]cn">kszhang@uestc.edu.cn</a></div>
+                <div align="center">
+                    <div width="160" align="middle" , style="border-radius:0%; overflow:hidden;">
+                        <!-- <img src="image/zks.jpg" width="160px" /> -->
+                        <img src="image/zks.png" alt="KeshengZhang, 张克胜" width="240" align="middle">
+                    </div>
+                </div>
+                <br />
+                <div align="center"><b>
+                        <font color="#333399" size="5">Kesheng Zhang | 张克胜</font>
+                    </b></div>
+                <div align="center"><img src="icon/icon-id card.png" width="15px" /> Lecturer in University of</div>
+                <div align="center">Electronic Science and Technology of China</div>
+                <div align="center"><img src="icon/icon-id card.png" width="15px" /> 电子科技大学讲师</div>
+                <!--<div align="center"><img src="icon/icon-tel.png" width="15px" />&nbsp;+86-18608651884</div>-->
+                <div align="center"><img src="icon/icon-mail.png" width="15px" />&nbsp;<a
+                        href="keshengzhang[at]uestc[dot]edu[dot]cn">kszhang@uestc.edu.cn</a></div>
 
-<div class="menu-category"><img src="icon/Menu.png" width="20px" style="margin-right: 10px;" /> Navigation | 导航</div>
-<div class="menu-item"><a href="index.html" class="current"><img src="icon/home.png" width="18px" style="margin-right: 8px;" /> Home | 首页</a></div>
-<div class="menu-item"><a href="publications.html"><img src="icon/Publications.png" width="18px" style="margin-right: 8px;" /> Publications | 发表论文</a></div>
-<div class="menu-item"><a href="projects.html"><img src="icon/Projects.png" width="18px" style="margin-right: 8px;" /> Projects | 项目</a></div>  
-<div class="menu-item"><a href="honorandawards.html">
-    <img src="icon/Honors.png" width="18px" style="margin-right: 8px;" /> Honors & Awards | 荣誉与获奖</a></div>  
-<div class="menu-item"><a href="services.html"><img src="icon/Services.png" width="18px" style="margin-right: 8px;" /> Services | 学术服务</a></div>
-<div class="menu-item"><a href="course.html"><img src="icon/Course.png" width="18px" style="margin-right: 8px;" /> Course | 课程</a></div>
-<div class="menu-item"><a href="group.html"><img src="icon/Students.png" width="18px" style="margin-right: 8px;" /> Group | 团队</a></div>
+                <div class="menu-category"><img src="icon/Menu.png" width="20px" style="margin-right: 10px;" />
+                    Navigation | 导航</div>
+                <div class="menu-item"><a href="index.html" class="current"><img src="icon/home.png" width="18px"
+                            style="margin-right: 8px;" /> Home | 首页</a></div>
+                <div class="menu-item"><a href="publications.html"><img src="icon/Publications.png" width="18px"
+                            style="margin-right: 8px;" /> Publications | 发表论文</a></div>
+                <div class="menu-item"><a href="projects.html"><img src="icon/Projects.png" width="18px"
+                            style="margin-right: 8px;" /> Projects | 项目</a></div>
+                <div class="menu-item"><a href="honorandawards.html">
+                        <img src="icon/Honors.png" width="18px" style="margin-right: 8px;" /> Honors & Awards |
+                        荣誉与获奖</a></div>
+                <div class="menu-item"><a href="services.html"><img src="icon/Services.png" width="18px"
+                            style="margin-right: 8px;" /> Services | 学术服务</a></div>
+                <div class="menu-item"><a href="course.html"><img src="icon/Course.png" width="18px"
+                            style="margin-right: 8px;" /> Course | 课程</a></div>
+                <div class="menu-item"><a href="group.html"><img src="icon/Students.png" width="18px"
+                            style="margin-right: 8px;" /> Group | 团队</a></div>
 
-<div class="menu-category"><img src="icon/link.png" width="20px" style="margin-right: 10px;" /> External Links | 外部链接</div>
-<div class="menu-item"><a href="https://scholar.google.com/citations?hl=en&user=mpdqz-sAAAAJ"><img src="icon/googlescholar.ico" width="18px" style="margin-right: 8px;" />Google Scholar</a></div>
-<div class="menu-item"><a href="https://ieeexplore.ieee.org/author/37089169708"><img src="icon/ieee.ico" width="18px" style="margin-right: 8px;" />IEEE</a></div>
-<div class="menu-item"><a href="https://orcid.org/0000-0003-3910-1581"><img src="icon/orcid.ico" width="18px" style="margin-right: 8px;" />ORCID</a></div>
-<div class="menu-item"><a href="https://github.com/KeshengZhang"><img src="icon/github.ico" width="18px" style="margin-right: 8px;" />GitHub</a></div>
+                <div class="menu-category"><img src="icon/link.png" width="20px" style="margin-right: 10px;" /> External
+                    Links | 外部链接</div>
+                <div class="menu-item"><a href="https://scholar.google.com/citations?hl=en&user=mpdqz-sAAAAJ"><img
+                            src="icon/googlescholar.ico" width="18px" style="margin-right: 8px;" />Google Scholar</a>
+                </div>
+                <div class="menu-item"><a href="https://ieeexplore.ieee.org/author/37089169708"><img src="icon/ieee.ico"
+                            width="18px" style="margin-right: 8px;" />IEEE</a></div>
+                <div class="menu-item"><a href="https://orcid.org/0000-0003-3910-1581"><img src="icon/orcid.ico"
+                            width="18px" style="margin-right: 8px;" />ORCID</a></div>
+                <div class="menu-item"><a href="https://github.com/KeshengZhang"><img src="icon/github.ico" width="18px"
+                            style="margin-right: 8px;" />GitHub</a></div>
 
-</td>
+            </td>
 
-<td id="layout-content">
-<div id="toptitle">
-<h1 class="animated-title"> <img src="icon/home.png" width="25px" style="vertical-align: middle; margin-right: 10px;" /> Welcome to Kesheng Zhang's Homepage | 欢迎来到张克胜的主页 [Draft Version] </h1>
-</div>
+            <td id="layout-content">
+                <div id="toptitle">
+                    <h1 class="animated-title"> <img src="icon/home.png" width="25px"
+                            style="vertical-align: middle; margin-right: 10px;" /> Welcome to Kesheng Zhang's Homepage |
+                        欢迎来到张克胜的主页 [Draft Version] </h1>
+                </div>
 
-<h2 class="section-title"><img src="icon/icon-id card.png" width="22px" style="vertical-align: middle; margin-right: 10px;" /> About Me | 个人基本信息</h2>
+                <h2 class="section-title"><img src="icon/icon-id card.png" width="22px"
+                        style="vertical-align: middle; margin-right: 10px;" /> About Me | 个人基本信息</h2>
 
-<table class="imgtable"><tr>
-<td align="left"><p  style="text-align:justify; text-justify:inter-ideograph;"><img src="icon/icon-id card.png" width="15px" />&nbsp;UESTC Lecturer | 电子科技大学讲师 <br />
-<a href=""><img src="icon/icon-id card.png" width="15px" />&nbsp;Official Homepage | 官方主页</a><br />
-<a href="https://www.auto.uestc.edu.cn/kxyj/kytd/yqkxyjsx.htm"><img src="icon/icon-earth.png" width="15px" />&nbsp;Automation Frontier Interdisciplinary Center | 自动化前沿交叉中心</a><br />
-<a href="https://www.auto.uestc.edu.cn/"><img src="icon/icon-earth.png" width="15px" />&nbsp;School of Automation Engineering| 自动化工程学院</a><br />
-<a href="https://www.uestc.edu.cn//"><img src="icon/icon-earth.png" width="15px" />&nbsp;University of Electronic Science and Technology of China | 电子科技大学 </a><br />
-<img src="icon/icon-earth.png" width="15px" />&nbsp;No.2006, Xiyuan Ave, West Hi-Tech Zone, Chengdu, Sichuan 611731, China | 成都市高新区（西区）西源大道2006号, 成都, 四川省 611731, 中国<br />
-<!--<img src="icon/icon-tel.png" width="15px" />&nbsp;Tel: +86-18608651884<br />-->
-<!--<img src="icon/icon-tel.png" width="15px" />&nbsp;Tel: +852-59807254<br />-->
-<img src="icon/icon-mail.png" width="15px" />&nbsp;Email: <a href="kszhang[at]uestc[dot]edu[dot]cn">kszhang@uestc.edu.cn</a><br />	
-</td></tr></table>
+                <table class="imgtable">
+                    <tr>
+                        <td align="left">
+                            <p style="text-align:justify; text-justify:inter-ideograph;"><img
+                                    src="icon/icon-id card.png" width="15px" />&nbsp;UESTC Lecturer | 电子科技大学讲师 <br />
+                                <a href=""><img src="icon/icon-id card.png" width="15px" />&nbsp;Official Homepage |
+                                    官方主页</a><br />
+                                <a href="https://www.auto.uestc.edu.cn/kxyj/kytd/yqkxyjsx.htm"><img
+                                        src="icon/icon-earth.png" width="15px" />&nbsp;Automation Frontier
+                                    Interdisciplinary Center | 自动化前沿交叉中心</a><br />
+                                <a href="https://www.auto.uestc.edu.cn/"><img src="icon/icon-earth.png"
+                                        width="15px" />&nbsp;School of Automation Engineering| 自动化工程学院</a><br />
+                                <a href="https://www.uestc.edu.cn//"><img src="icon/icon-earth.png"
+                                        width="15px" />&nbsp;University of Electronic Science and Technology of China |
+                                    电子科技大学 </a><br />
+                                <img src="icon/icon-earth.png" width="15px" />&nbsp;No.2006, Xiyuan Ave, West Hi-Tech
+                                Zone, Chengdu, Sichuan 611731, China | 成都市高新区（西区）西源大道2006号, 成都, 四川省 611731, 中国<br />
+                                <!--<img src="icon/icon-tel.png" width="15px" />&nbsp;Tel: +86-18608651884<br />-->
+                                <!--<img src="icon/icon-tel.png" width="15px" />&nbsp;Tel: +852-59807254<br />-->
+                                <img src="icon/icon-mail.png" width="15px" />&nbsp;Email: <a
+                                    href="kszhang[at]uestc[dot]edu[dot]cn">kszhang@uestc.edu.cn</a><br />
+                        </td>
+                    </tr>
+                </table>
 
-<h2 class="section-title"><img src="icon/News.png" width="22px" style="vertical-align: middle; margin-right: 10px;" /> Admission Information | 招生信息</h2>
+                <h2 class="section-title"><img src="icon/News.png" width="22px"
+                        style="vertical-align: middle; margin-right: 10px;" /> Admission Information | 招生信息</h2>
 
-	暂时招收不了自动化、人工智能、电子信息和计算机及其他相关专业的本科生、硕士、博士研究生、博士后。同时也欢迎外校学生访问交流。如有兴趣请附材料发送邮件至kszhang@uestc.edu.cn，邮件内容请简要介绍个人基本情况、研究兴趣和计划访问交流的时间等信息。谢谢！<br />
-Currently, I am not recruiting undergraduate, master, Ph.D. students and postdocs in automation, artificial intelligence, electronic information and computer science and other related majors. 
-Meanwhile, students from other universities are also welcome to visit and exchange. If you are interested, please send an email to kszhang@uestc.edu.cn！<br />
+                暂时招收不了自动化、人工智能、电子信息和计算机及其他相关专业的本科生、硕士、博士研究生、博士后。同时也欢迎外校学生访问交流。如有兴趣请附材料发送邮件至kszhang@uestc.edu.cn，邮件内容请简要介绍个人基本情况、研究兴趣和计划访问交流的时间等信息。谢谢！<br />
+                Currently, I am not recruiting undergraduate, master, Ph.D. students and postdocs in automation,
+                artificial intelligence, electronic information and computer science and other related majors.
+                Meanwhile, students from other universities are also welcome to visit and exchange. If you are
+                interested, please send an email to kszhang@uestc.edu.cn！<br />
 
-<h2 class="section-title"><img src="icon/Experiences.png" width="22px" style="vertical-align: middle; margin-right: 10px;" /> Experiences | 经历</h2>
+                <h2 class="section-title"><img src="icon/Experiences.png" width="22px"
+                        style="vertical-align: middle; margin-right: 10px;" /> Experiences | 经历</h2>
 
-<table class="imgtable"><tr><td>
-<a href="index.html">
-	<img src="university-badge/UESTC_logo_.png" alt="University of Electronic Science and Technology of China" width="170px" />
-</a>&nbsp;&nbsp;&nbsp;
-	<!-- <img src="university-badge/UESTC_logo.png" alt="School of Automation Engineering" width="80px" /> -->
-	<!--<img src="university-badge/HUST AIA Brain-Inspired Intelligence and Intelligent Control Laboratory.png" alt="Brain-Inspired Intelligence and Intelligent Control Laboratory" width="360px" />-->
-	</td></tr>
-<tr><td rowspan="2" align="middle"><p style="text-align:justify; text-justify:inter-ideograph;"> 
-	01/2026-persent, Lecturer, <a href="https://www.auto.uestc.edu.cn/kxyj/kytd/yqkxyjsx.htm">Automation Frontier Interdisciplinary Center</a>,
-	 <a href="https://www.auto.uestc.edu.cn/">School of Automation Engineering</a>, 
-<a href="https://en.uestc.edu.cn/">University of Electronic Science and Technology of China</a>, No.2006, Xiyuan Ave, West Hi-Tech Zone, Chengdu, Sichuan 611731, China<br />
-01/2026-至今, 讲师, <a href="https://www.auto.uestc.edu.cn/kxyj/kytd/yqkxyjsx.htm">自动化前沿交叉中心</a>, <a href="https://www.auto.uestc.edu.cn/">自动化工程学院</a>, 
-<a href="https://www.uestc.edu.cn/">电子科技大学</a>, 成都市高新区（西区）西源大道2006号, 成都, 四川省 611731, 中国</p>
-</td></tr></table>
+                <table class="imgtable">
+                    <tr>
+                        <td>
+                            <a href="index.html">
+                                <img src="university-badge/UESTC_logo_.png"
+                                    alt="University of Electronic Science and Technology of China" width="170px" />
+                            </a>&nbsp;&nbsp;&nbsp;
+                            <!-- <img src="university-badge/UESTC_logo.png" alt="School of Automation Engineering" width="80px" /> -->
+                            <!--<img src="university-badge/HUST AIA Brain-Inspired Intelligence and Intelligent Control Laboratory.png" alt="Brain-Inspired Intelligence and Intelligent Control Laboratory" width="360px" />-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" align="middle">
+                            <p style="text-align:justify; text-justify:inter-ideograph;">
+                                01/2026-persent, Lecturer, <a
+                                    href="https://www.auto.uestc.edu.cn/kxyj/kytd/yqkxyjsx.htm">Automation Frontier
+                                    Interdisciplinary Center</a>,
+                                <a href="https://www.auto.uestc.edu.cn/">School of Automation Engineering</a>,
+                                <a href="https://en.uestc.edu.cn/">University of Electronic Science and Technology of
+                                    China</a>, No.2006, Xiyuan Ave, West Hi-Tech Zone, Chengdu, Sichuan 611731,
+                                China<br />
+                                01/2026-至今, 讲师, <a
+                                    href="https://www.auto.uestc.edu.cn/kxyj/kytd/yqkxyjsx.htm">自动化前沿交叉中心</a>, <a
+                                    href="https://www.auto.uestc.edu.cn/">自动化工程学院</a>,
+                                <a href="https://www.uestc.edu.cn/">电子科技大学</a>, 成都市高新区（西区）西源大道2006号, 成都, 四川省 611731, 中国
+                            </p>
+                        </td>
+                    </tr>
+                </table>
 
-<table class="imgtable"><tr><td>
-<a href="index.html"><img src="university-badge/UESTC_logo_.png" alt="University of Electronic Science and Technology of China" width="170px" /></a>&nbsp;&nbsp;&nbsp;
-	<!-- <img src="university-badge/CUESTC_logo.png" alt="CityU College of Engineering" width="80px" /> -->
-	</td></tr>
-<tr><td rowspan="2" align="middle"><p  style="text-align:justify; text-justify:inter-ideograph;"> 01/2026-persent, Postdoc Fellow,  
-	<a href="ttps://www.auto.uestc.edu.cn/kxyj/kytd/yqkxyjsx.htm"> Institute of Electronic Testing Technology and Instruments</a>&nbsp;and&nbsp;
-	<a href="https://www.auto.uestc.edu.cn/">School of Automation Engineering</a>,
-<a href="https://en.uestc.edu.cn/">University of Electronic Science and Technology of China</a>, No.2006, Xiyuan Ave, West Hi-Tech Zone, Chengdu, Sichuan 611731, China<br /> 
-	Advisor: Prof. <a href="https://www.auto.uestc.edu.cn/info/1152/4333.htm">Yuhua Cheng</a> (ChangJiang Distinguished Professor) <br />
-01/2026-至今, 博士后, <a href="">仪器科学与工程</a>,
-<a href="https://www.auto.uestc.edu.cn/kxyj/kytd/yqkxyjsx.htm">电子测试技术与仪器研究所</a>, <a href="https://www.auto.uestc.edu.cn/">自动化工程学院</a>,
-<a href="https://www.uestc.edu.cn/">电子科技大学</a>, 成都市高新区（西区）西源大道2006号, 成都, 四川省 611731, 中国 <br />
-	导师: <a href="https://www.auto.uestc.edu.cn/info/1152/4333.htm">程玉华</a>教授 (长江学者特聘教授) <br /></p>
-</td></tr></table>
-	
+                <table class="imgtable">
+                    <tr>
+                        <td>
+                            <a href="index.html"><img src="university-badge/UESTC_logo_.png"
+                                    alt="University of Electronic Science and Technology of China"
+                                    width="170px" /></a>&nbsp;&nbsp;&nbsp;
+                            <!-- <img src="university-badge/CUESTC_logo.png" alt="CityU College of Engineering" width="80px" /> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" align="middle">
+                            <p style="text-align:justify; text-justify:inter-ideograph;"> 01/2026-persent, Postdoc
+                                Fellow,
+                                <a href="ttps://www.auto.uestc.edu.cn/kxyj/kytd/yqkxyjsx.htm"> Institute of Electronic
+                                    Testing Technology and Instruments</a>&nbsp;and&nbsp;
+                                <a href="https://www.auto.uestc.edu.cn/">School of Automation Engineering</a>,
+                                <a href="https://en.uestc.edu.cn/">University of Electronic Science and Technology of
+                                    China</a>, No.2006, Xiyuan Ave, West Hi-Tech Zone, Chengdu, Sichuan 611731,
+                                China<br />
+                                Advisor: Prof. <a href="https://www.auto.uestc.edu.cn/info/1152/4333.htm">Yuhua
+                                    Cheng</a> (ChangJiang Distinguished Professor) <br />
+                                01/2026-至今, 博士后, <a href="">仪器科学与工程</a>,
+                                <a href="https://www.auto.uestc.edu.cn/kxyj/kytd/yqkxyjsx.htm">电子测试技术与仪器研究所</a>, <a
+                                    href="https://www.auto.uestc.edu.cn/">自动化工程学院</a>,
+                                <a href="https://www.uestc.edu.cn/">电子科技大学</a>, 成都市高新区（西区）西源大道2006号, 成都, 四川省 611731, 中国
+                                <br />
+                                导师: <a href="https://www.auto.uestc.edu.cn/info/1152/4333.htm">程玉华</a>教授 (长江学者特聘教授)
+                                <br />
+                            </p>
+                        </td>
+                    </tr>
+                </table>
 
-<!-- <table class="imgtable"><tr><td>
+
+                <!-- <table class="imgtable"><tr><td>
 <a href="index.html"><img src="university-badge/University of Texas at Arlington with name.jpg" alt="University of Texas at Arlington" width="120px" /></a>&nbsp;&nbsp;&nbsp;
 	<img src="university-badge/UTA Research Institute.gif" alt="UTA Research Institute" width="140px" />
 	</td></tr>
@@ -275,58 +391,132 @@ Meanwhile, students from other universities are also welcome to visit and exchan
 	导师: <a href="https://www.uta.edu/academics/faculty/profile?username=flewis#About%20Me">Frank L. Lewis</a>教授 (Life Fellow of IEEE, 美国发明家科学院院士, Fellow of IFAC, AIAA, AAIA, AAAS, EUCA, UK Institute of MC) <br /></p>
 </td></tr></table>
    -->
-<h2 class="section-title"><img src="icon/Education.png" width="22px" style="vertical-align: middle; margin-right: 10px;" /> Educations | 教育</h2>
-	
-<table class="imgtable"><tr><td>
-<a href="index.html"><img src="university-badge/Northeastern University with name.png" alt="Northeastern University" width="120px" /></a>&nbsp;&nbsp;&nbsp;
-	<img src="university-badge/NEU State Key Laboratory of Synthetical Automation for Process Industries.png" 
-	alt="State Key Laboratory of Synthetical Automation for Process Industries" width="160px" />
-	</td></tr>
-<tr><td rowspan="2" align="middle"><p style="text-align:justify; text-justify:inter-ideograph;"> 09/2019-10/2025, Ph.D., Control Theory and Control Engineering, 
-<a href="http://www.sapi.neu.edu.cn/">State Key Laboratory of Synthetical Automation for Process Industries</a>, 
-	<a href="http://english.neu.edu.cn/">Northeastern University</a>, 3-11 Wenhua Road, Heping District,  Shenyang, Liaoning 110819, China<br /> 
-	Advisor: Prof. <a href="https://ieeexplore.ieee.org/author/37268730400/">Tianyou Chai</a> (Life Fellow of IEEE, Fellow of IFAC, member of the Chinese Academy of Engineering) <br />
-09/2019-10/2025, 工学博士, 控制理论与控制工程, <a href="http://www.sapi.neu.edu.cn/">流程工业综合自动化国家重点实验室</a>, 
-<a href="http://www.neu.edu.cn/">东北大学</a>, 和平区文化路3巷11号, 沈阳, 辽宁省 110819, 中国<br /> 
-	导师: <a href="https://ieeexplore.ieee.org/author/37268730400/">柴天佑</a>教授 (Life Fellow of IEEE, Fellow of IFAC, 中国工程院院士) </p>
-</td></tr></table>
-	
-	
-<table class="imgtable"><tr><td>
-<a href="index.html"><img src="university-badge/Northeastern University with name.png" alt="Northeastern University" width="120px" /></a>&nbsp;&nbsp;&nbsp;
-	<img src="university-badge/NEU College of Information Science and Engineering.png" alt="College of Information Science and Engineering" width="160px" />
-	</td></tr>
-<tr><td rowspan="2" align="middle"><p style="text-align:justify; text-justify:inter-ideograph;"> 09/2014-07/2018, B.Eng., Automation, <a href="http://www.ise.neu.edu.cn/">College of Information Science and Engineering</a>, 
-<a href="http://english.neu.edu.cn/">Northeastern University</a>, 3-11 Wenhua Road, Heping District,  Shenyang, Liaoning 110819, China<br />
-09/2014-07/2018, 工学学士, 自动化, <a href="http://www.ise.neu.edu.cn/">信息科学与工程学院</a>, <a href="http://www.neu.edu.cn/">东北大学</a>, 和平区文化路3巷11号, 沈阳, 辽宁省 110819, 中国</p>
-</td></tr></table>
+                <h2 class="section-title"><img src="icon/Education.png" width="22px"
+                        style="vertical-align: middle; margin-right: 10px;" /> Educations | 教育</h2>
+
+                <table class="imgtable">
+                    <tr>
+                        <td>
+                            <a href="index.html"><img src="university-badge/Northeastern University with name.png"
+                                    alt="Northeastern University" width="120px" /></a>&nbsp;&nbsp;&nbsp;
+                            <img src="university-badge/NEU State Key Laboratory of Synthetical Automation for Process Industries.png"
+                                alt="State Key Laboratory of Synthetical Automation for Process Industries"
+                                width="160px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" align="middle">
+                            <p style="text-align:justify; text-justify:inter-ideograph;"> 09/2019-10/2025, Ph.D.,
+                                Control Theory and Control Engineering,
+                                <a href="http://www.sapi.neu.edu.cn/">State Key Laboratory of Synthetical Automation for
+                                    Process Industries</a>,
+                                <a href="http://english.neu.edu.cn/">Northeastern University</a>, 3-11 Wenhua Road,
+                                Heping District, Shenyang, Liaoning 110819, China<br />
+                                Advisor: Prof. <a href="https://ieeexplore.ieee.org/author/37268730400/">Tianyou
+                                    Chai</a> (Life Fellow of IEEE, Fellow of IFAC, member of the Chinese Academy of
+                                Engineering) <br />
+                                09/2019-10/2025, 工学博士, 控制理论与控制工程, <a
+                                    href="http://www.sapi.neu.edu.cn/">流程工业综合自动化国家重点实验室</a>,
+                                <a href="http://www.neu.edu.cn/">东北大学</a>, 和平区文化路3巷11号, 沈阳, 辽宁省 110819, 中国<br />
+                                导师: <a href="https://ieeexplore.ieee.org/author/37268730400/">柴天佑</a>教授 (Life Fellow of
+                                IEEE, Fellow of IFAC, 中国工程院院士)
+                            </p>
+                        </td>
+                    </tr>
+                </table>
 
 
-<h2 class="section-title"><img src="icon/Research Interests.png" width="22px" style="vertical-align: middle; margin-right: 10px;" /> Research Interests | 研究兴趣</h2>
-<ul>
-   
-  <li>  <p style="text-align:justify; text-justify:inter-ideograph;">  Industrial Artificial Intelligence  | 工业人工智能 </p>  </li>
-  <li>  <p style="text-align:justify; text-justify:inter-ideograph;">  Digital Twin Technology | 数字孪生技术    </p>  </li>
-  <li>  <p style="text-align:justify; text-justify:inter-ideograph;">  Cyber-Physical-System | 信息物理系统    </p>  </li>
-  <li>  <p style="text-align:justify; text-justify:inter-ideograph;">  Complex Industrial Process Modeling | 复杂工业过程建模 </p>  </li>
-  <li>  <p style="text-align:justify; text-justify:inter-ideograph;">  Time Series Prediction  | 时间序列预测  </p>  </li>
-  <li>  <p style="text-align:justify; text-justify:inter-ideograph;">  Operational Optimization  | 全流程运行优化    </p>  </li>
-  <!-- <li>  <p style="text-align:justify; text-justify:inter-ideograph;">  Linear System and Control  | 线性系统与控制    </p>  </li> -->
-  <li>  <p style="text-align:justify; text-justify:inter-ideograph;">  Deep Learning  | 深度学习    </p>  </li>
-  <li>  <p style="text-align:justify; text-justify:inter-ideograph;">  Reinforcement Learning  | 强化学习    </p>  </li>
-  <li>  <p style="text-align:justify; text-justify:inter-ideograph;">  Image Processing | 图像处理    </p>  </li>
-  <li>  <p style="text-align:justify; text-justify:inter-ideograph;">  Intelligent Control  | 智能控制    </p>  </li>
-  <li>  <p style="text-align:justify; text-justify:inter-ideograph;">  Unmanned Aerial Vehicle (UAV) Formation Control | 无人机编队控制    </p>  </li>
-  <li>  <p style="text-align:justify; text-justify:inter-ideograph;">  Industrial Process Operational Optimization | 工业过程运行优化    </p>  </li>
-  <li>  <p style="text-align:justify; text-justify:inter-ideograph;">  Embedded System Design | 嵌入式系统设计    </p>  </li>
-  <li>  <p style="text-align:justify; text-justify:inter-ideograph;">  Visualization and Visual Analytics | 可视化与可视分析    </p>  </li>
-  <li>  <p style="text-align:justify; text-justify:inter-ideograph;">  Complex Industrial System Development | 复杂工业系统开发  </p>  </li>
-  
-</ul> 
+                <table class="imgtable">
+                    <tr>
+                        <td>
+                            <a href="index.html"><img src="university-badge/Northeastern University with name.png"
+                                    alt="Northeastern University" width="120px" /></a>&nbsp;&nbsp;&nbsp;
+                            <img src="university-badge/NEU College of Information Science and Engineering.png"
+                                alt="College of Information Science and Engineering" width="160px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" align="middle">
+                            <p style="text-align:justify; text-justify:inter-ideograph;"> 09/2014-07/2018, B.Eng.,
+                                Automation, <a href="http://www.ise.neu.edu.cn/">College of Information Science and
+                                    Engineering</a>,
+                                <a href="http://english.neu.edu.cn/">Northeastern University</a>, 3-11 Wenhua Road,
+                                Heping District, Shenyang, Liaoning 110819, China<br />
+                                09/2014-07/2018, 工学学士, 自动化, <a href="http://www.ise.neu.edu.cn/">信息科学与工程学院</a>, <a
+                                    href="http://www.neu.edu.cn/">东北大学</a>, 和平区文化路3巷11号, 沈阳, 辽宁省 110819, 中国
+                            </p>
+                        </td>
+                    </tr>
+                </table>
 
 
-  
-<!--<br>
+                <h2 class="section-title"><img src="icon/Research Interests.png" width="22px"
+                        style="vertical-align: middle; margin-right: 10px;" /> Research Interests | 研究兴趣</h2>
+                <ul>
+
+                    <li>
+                        <p style="text-align:justify; text-justify:inter-ideograph;"> Industrial Artificial Intelligence
+                            | 工业人工智能 </p>
+                    </li>
+                    <li>
+                        <p style="text-align:justify; text-justify:inter-ideograph;"> Digital Twin Technology | 数字孪生技术
+                        </p>
+                    </li>
+                    <li>
+                        <p style="text-align:justify; text-justify:inter-ideograph;"> Cyber-Physical-System | 信息物理系统
+                        </p>
+                    </li>
+                    <li>
+                        <p style="text-align:justify; text-justify:inter-ideograph;"> Complex Industrial Process
+                            Modeling | 复杂工业过程建模 </p>
+                    </li>
+                    <li>
+                        <p style="text-align:justify; text-justify:inter-ideograph;"> Time Series Prediction | 时间序列预测
+                        </p>
+                    </li>
+                    <li>
+                        <p style="text-align:justify; text-justify:inter-ideograph;"> Operational Optimization | 全流程运行优化
+                        </p>
+                    </li>
+                    <!-- <li>  <p style="text-align:justify; text-justify:inter-ideograph;">  Linear System and Control  | 线性系统与控制    </p>  </li> -->
+                    <li>
+                        <p style="text-align:justify; text-justify:inter-ideograph;"> Deep Learning | 深度学习 </p>
+                    </li>
+                    <li>
+                        <p style="text-align:justify; text-justify:inter-ideograph;"> Reinforcement Learning | 强化学习 </p>
+                    </li>
+                    <li>
+                        <p style="text-align:justify; text-justify:inter-ideograph;"> Image Processing | 图像处理 </p>
+                    </li>
+                    <li>
+                        <p style="text-align:justify; text-justify:inter-ideograph;"> Intelligent Control | 智能控制 </p>
+                    </li>
+                    <li>
+                        <p style="text-align:justify; text-justify:inter-ideograph;"> Unmanned Aerial Vehicle (UAV)
+                            Formation Control | 无人机编队控制 </p>
+                    </li>
+                    <li>
+                        <p style="text-align:justify; text-justify:inter-ideograph;"> Industrial Process Operational
+                            Optimization | 工业过程运行优化 </p>
+                    </li>
+                    <li>
+                        <p style="text-align:justify; text-justify:inter-ideograph;"> Embedded System Design | 嵌入式系统设计
+                        </p>
+                    </li>
+                    <li>
+                        <p style="text-align:justify; text-justify:inter-ideograph;"> Visualization and Visual Analytics
+                            | 可视化与可视分析 </p>
+                    </li>
+                    <li>
+                        <p style="text-align:justify; text-justify:inter-ideograph;"> Complex Industrial System
+                            Development | 复杂工业系统开发 </p>
+                    </li>
+
+                </ul>
+
+
+
+                <!--<br>
 <br> 
 
 <h2><img src="icon/Footstep.png" width="18px" /> Browsing Records and Footstep Map | 浏览记录与足迹地图</h2>
@@ -342,16 +532,18 @@ var _hmt = _hmt || [];
 </script>
   
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=196TOgzJW0mwpZflq-GFcxSFOTsB76-HZ" width="548" height="300"></iframe>-->
- 
-<div id="footer">
-<div id="footer-text">
-This website was last updated on 2026-04-02, @K. Zhang. 特别鸣谢@YiJiang https://yijiang1992.github.io/ 的主页设计和维护，部分内容参考了@YiJiang的主页。 This website is built with <a href="https://yijiang1992.github.io/ ">YiJiang</a>.
-</div>
-</div>
+
+                <div id="footer">
+                    <div id="footer-text">
+                        This website was last updated on 2026-04-02, @K. Zhang. 特别鸣谢<a
+                            href="https://yijiang1992.github.io/ ">@YiJiang</a>的主页设计和维护，部分内容参考其主页.
+                    </div>
+                </div>
 
 
-</td>
-</tr>
-</table>
+            </td>
+        </tr>
+    </table>
 </body>
+
 </html>
